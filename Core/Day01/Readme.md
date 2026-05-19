@@ -90,3 +90,15 @@ Set the active subscription:
 
 bash
 az account set --subscription "<subscription-id>"
+
+✅ Day 01 covers:
+
+What Terraform is
+
+Installing Terraform (Windows/macOS/Linux)
+
+Installing Azure CLI
+
+Authenticating to Azure
+
+📘 Day 02 — Coming Next
