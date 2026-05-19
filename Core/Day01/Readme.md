@@ -53,3 +53,40 @@ Open Git Bash/PowerShell/Terminal
 Run terraform -version
 
 You should see the installed version displayed
+
+⚙️ Installing Azure CLI
+Terraform with Azure requires the Azure CLI for authentication.
+
+Windows
+Download MSI installer:
+Install Azure CLI for Windows (aka.ms in Bing)
+
+macOS
+bash
+brew update && brew install azure-cli
+Linux (Ubuntu/Debian)
+bash
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+Verify:
+
+bash
+az version
+🔐 Authenticate to Azure
+Login with your account:
+
+bash
+az login
+A browser window opens → sign in with your Azure account.
+
+For headless servers, use:
+
+bash
+az login --use-device-code
+List subscriptions:
+
+bash
+az account list --output table
+Set the active subscription:
+
+bash
+az account set --subscription "<subscription-id>"
