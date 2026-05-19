@@ -1,9 +1,55 @@
-Install Terraform CLI
+📘 Day 01 — What is Terraform?
+Terraform is an open-source Infrastructure as Code (IaC) tool by HashiCorp. It lets you define, provision, and manage cloud infrastructure using code.
 
-Configure provider (azurerm)
+Declarative: You describe what you want, Terraform figures out how to build it.
 
-Create a resource group
+Multi-cloud: Works with Azure, AWS, GCP, Kubernetes, and more.
 
-Use terraform init, plan, apply
+State management: Tracks resources in a state file.
 
-Outputs and variables
+Automation-friendly: Integrates with CI/CD pipelines.
+
+⚙️ Installing Terraform (Windows, macOS, Linux)
+01
+Download Terraform
+Get the latest Terraform binary from HashiCorp releases.
+
+Visit https://developer.hashicorp.com/terraform/downloads
+
+Choose your OS (Windows/macOS/Linux)
+
+Select the correct architecture (amd64 or arm64)
+
+Download the ZIP archive
+
+02
+Extract the Binary
+Setup
+Terraform is a single executable file inside the ZIP.
+
+Unzip the downloaded archive
+
+Locate terraform.exe (Windows) or terraform (Linux/macOS)
+
+Move it to a permanent folder (e.g., C:\Terraform or /usr/local/bin)
+
+03
+Add to PATH
+Ensure Terraform can be run from any terminal.
+
+On Windows: Add C:\Terraform to System PATH via Environment Variables
+
+On Linux/macOS: Add export PATH=$PATH:/usr/local/bin to ~/.bashrc or ~/.zshrc
+
+Restart your terminal
+
+04
+Verify Installation
+Most Common Check
+Confirm Terraform is installed correctly.
+
+Open Git Bash/PowerShell/Terminal
+
+Run terraform -version
+
+You should see the installed version displayed
